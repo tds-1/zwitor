@@ -15,6 +15,6 @@ app.get("/contacts",function(req,res){
   res.render("contacts");
 });
 
-app.listen("3000",function(){
+app.listen(process.env.PORT,process.env.IP,function(){
     console.log("Connected");
 });
