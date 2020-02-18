@@ -11,9 +11,6 @@ app.use(express.static(__dirname + "/public"));
 app.get("/",function(req,res){
    res.render("index");
 });
-app.get("/contacts",function(req,res){
-  res.render("contacts");
-});
 
 app.listen(process.env.PORT,process.env.IP,function(){
     console.log("Connected");
